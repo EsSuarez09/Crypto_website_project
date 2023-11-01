@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoMeps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body >
+   
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="#"><img src="images/logo1.png" alt="cryptomeps-logo" height="30"></a>
+    
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Buy Crypto</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Market</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Contact</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About Us</a></li>
+                </ul>
+    
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
+    
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-info me-2">Login</button>
+                    <button type="button" class="btn btn-info">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="hero-container mt-5">
+        
+   
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-4">Take your <span>CryptoCurrency Platform</span> to the next level</h1>
+                    <p class="lead">Cryptocurrencies are powered by blockchain technology, which is a more decentralized and secure way of recording transactions..</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-info btn-lg px-4 me-md-2" fdprocessedid="16ext">Get Started Now</button>
+                            
+                        </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Trending</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <img src="images/bitcoin.png" alt="Bitcoin" height="50">
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">$<span id="bitcoin"></span></h3>  
+          <p>Bitcoin BTC/CAD</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <img src="images/ethereum.png" alt="Bitcoin" height="50">
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">$<span id="ethereum"></span></h3>
+          <p>Ethereum ETH/CAD</p>
+         
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <img src="images/solana.png" alt="Bitcoin" height="50">
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">$<span id="solana"></span></h3>
+          <p>Solana SOL/CAD</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <img src="images/dogecoin.png" alt="Bitcoin" height="50">
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">$<span id="dogecoin"></span></h3>
+          <p>Dogecoin DOGE/CAD</p>
+        </div>
+      </div>
+    </div> 
+  
+
+<h2>Crypto Market Table</h2>
+
+<table class="table">
+	<thead>
+		<tr>
+      <th></th>
+      <th>#</th>   
+			<th>Coin Name</th>
+			<th>Price CAD</th>
+      <th>24 hours %</th>
+			<th>Market Cap</th>
+      <th>Last 7 days</th>
+      <th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>  
+      <td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+      </svg></td>
+      <td>1</td>
+      <td style=" "><img src="images/bitcoin.png" height="25"> Bitcoin BTC</td>
+		  <td>$<span id="bitcoin"></span></td>
+			<td></td>
+      <td></td>
+      <td></td>
+      <td><button class="btn btn-success rounded-pill px-3" type="button">BUY</button><button class="btn btn-warning rounded-pill px-3" type="button">SELL</button><button class="btn btn-danger rounded-pill px-3" type="button">TRADE</button></td>
+	  </tr>
+	  <tr>
+      <td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+      </svg></td>
+      <td>2</td>
+	    <td style=" "><img src="images/ethereum.png" height="25"> Ethereum ETH</td>
+	    <td>$<span id="ethereum"></span></td>
+	    <td></td>
+      <td></td>
+      <td></td>
+      <td><button class="btn btn-success rounded-pill px-3" type="button">BUY</button><button class="btn btn-warning rounded-pill px-3" type="button">SELL</button><button class="btn btn-danger rounded-pill px-3" type="button">TRADE</button></td>
+	  </tr>
+	  <tr>
+      <td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+      </svg></td>
+      <td>3</td>
+	    <td style=" "><img src="images/solana.png" height="25"> Solana SOL</td>
+	    <td>$<span id="solana"></span></td>
+	    <td></td>
+      <td></td>
+      <td></td>
+      <td><button class="btn btn-success rounded-pill px-3" type="button">BUY</button><button class="btn btn-warning rounded-pill px-3" type="button">SELL</button><button class="btn btn-danger rounded-pill px-3" type="button">TRADE</button></td>
+	  </tr>    
+	  <tr>  
+      <td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+      </svg></td> 
+      <td>4</td>     
+	    <td style=" "><img src="images/dogecoin.png" height="25"> Dogecoin DOGE</td>        
+	    <td>$<span id="dogecoin"></span></td>        
+	    <td></td> 
+      <td></td>
+      <td></td>
+      <td><button class="btn btn-success rounded-pill px-3" type="button">BUY</button><button class="btn btn-warning rounded-pill px-3" type="button">SELL</button><button class="btn btn-danger rounded-pill px-3" type="button">TRADE</button></td>       
+	  </tr>     
+    <tr> 
+      <td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+      </svg></td> 
+      <td>5</td>       
+      <td style=" "><img src="images/tether.png" height="25"> Tether USDT</td>       
+      <td>$<span id="tether"></span></td>        
+      <td></td> 
+      <td></td>
+      <td></td>
+      <td><button class="btn btn-success rounded-pill px-3" type="button">BUY</button><button class="btn btn-warning rounded-pill px-3" type="button">SELL</button><button class="btn btn-danger rounded-pill px-3" type="button">TRADE</button></td>      
+    </tr>          
+    <tr> 
+      <td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+      </svg></td> 
+      <td>6</td>       
+      <td style=" "><img src="images/cardano.png" height="25"> Cardano ADA</td>        
+      <td>$<span id="cardano"></span></td>        
+      <td></td> 
+      <td></td>
+      <td></td>
+      <td><button class="btn btn-success rounded-pill px-3" type="button">BUY</button><button class="btn btn-warning rounded-pill px-3" type="button">SELL</button><button class="btn btn-danger rounded-pill px-3" type="button">TRADE</button></td>       
+    </tr> 
+    <tr>   
+      <td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+      </svg></td> 
+      <td>7</td>     
+      <td style=" "><img src="images/tron.png" height="25"> TRON TRX</td>        
+      <td>$<span id="tron"></span></td>        
+      <td></td> 
+      <td></td>
+      <td></td> 
+      <td><button class="btn btn-success rounded-pill px-3" type="button">BUY</button><button class="btn btn-warning rounded-pill px-3" type="button">SELL</button><button class="btn btn-danger rounded-pill px-3" type="button">TRADE</button></td>      
+    </tr>  
+    <tr>
+      <td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+      </svg></td> 
+      <td>8</td>        
+      <td style=" "><img src="images/chainlink.png" height="25"> Chainlink LINK</td>        
+      <td>$<span id="chainlink"></span></td>        
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><button class="btn btn-success rounded-pill px-3" type="button">BUY</button><button class="btn btn-warning rounded-pill px-3" type="button">SELL</button><button class="btn btn-danger rounded-pill px-3" type="button">TRADE</button></td>        
+    </tr>    
+    <tr> 
+      <td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+      </svg></td>
+      <td>9</td>        
+      <td style=" "><img src="images/cardano.png" height="25"> Polkadot DOT</td>        
+      <td>$<span id="polkadot"></span></td>        
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><button class="btn btn-success rounded-pill px-3" type="button">BUY</button><button class="btn btn-warning rounded-pill px-3" type="button">SELL</button><button class="btn btn-danger rounded-pill px-3" type="button">TRADE</button></td>        
+    </tr>
+    <tr>   
+      <td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+      </svg></td> 
+      <td>10</td>     
+      <td style=" "><img src="images/cardano.png" height="25"> Litecoin LTC</td>        
+      <td>$<span id="litecoin"></span></td>        
+      <td></td> 
+      <td></td>
+      <td></td>
+      <td><button class="btn btn-success rounded-pill px-3" type="button">BUY</button><button class="btn btn-warning rounded-pill px-3" type="button">SELL</button><button class="btn btn-danger rounded-pill px-3" type="button">TRADE</button></td>       
+    </tr>
+   
+	</tbody>
+</table>
+
+
+
+
+ 
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
